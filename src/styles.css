@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Economica&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,400&family=Shadows+Into+Light&family=Square+Peg&display=swap");
+
+.App {
+  font-family: "Roboto condensed";
+  text-align: center;
+  color: #838383;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+body {
+  background: #6c7fa4;
+  background: -moz-linear-gradient(left, #6c7fa4 0%, #9bb9e3 100%);
+  background: -webkit-linear-gradient(left, #6c7fa4 0%, #9bb9e3 100%);
+  background: linear-gradient(to right, #6c7fa4 0%, #9bb9e3 100%);
+}
+
+.Forecast {
+  background-color: #d3dee2;
+  padding: 10px 0px 10px 0px;
+  margin: 10px 10px 10px 10px;
+  box-shadow: 5px 5px 20px 0px rgba(131, 131, 131, 0.98);
+}
+
+.Search {
+  font-size: smaller;
+  background-color: #d3dee2;
+  padding: 20px 0px 20px 0px;
+  margin: 10px 10px 10px 10px;
+  box-shadow: 5px 5px 20px 0px rgba(131, 131, 131, 0.98);
+}
+
+h1 {
+  font-family: "Shadows Into Light";
+  text-align: center;
+  color: #5d5d5d;
+}
+
+h2 {
+  padding: 10px;
+  letter-spacing: 8px;
+}
+
+table {
+  width: 100%;
+}
+
+.rain {
+  font-weight: bolder;
+  color: #5d5d5d;
+}
+
+input {
+  color: #5d5d5d;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 5px;
+}
+
+.button {
+  margin-left: 10px;
+  background: white;
+  opacity: 0.5;
+  border-style: solid;
+  border-color: transparent;
+}
