@@ -4,7 +4,8 @@
   font-family: "Roboto condensed";
   text-align: center;
   color: #838383;
-  max-width: 500px;
+  width: 80%;
+  min-width: 500px;
   margin: 0 auto;
 }
 
@@ -31,18 +32,23 @@ body {
 }
 
 h1 {
+  padding: 30px 0px 15px 0px;
   font-family: "Shadows Into Light";
   text-align: center;
   color: #5d5d5d;
 }
 
 h2 {
-  padding: 10px;
+  padding-top: 10px;
   letter-spacing: 8px;
 }
 
-table {
-  width: 100%;
+h3 {
+  font-size: 10px;
+}
+
+img {
+  margin-bottom: -20px;
 }
 
 .rain {
@@ -60,7 +66,15 @@ input {
 .button {
   margin-left: 10px;
   background: white;
-  opacity: 0.5;
+  opacity: 0.8;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.button:hover {
+  margin-left: 10px;
+  background: white;
+  opacity: 0.6;
   border-style: solid;
   border-color: transparent;
 }
