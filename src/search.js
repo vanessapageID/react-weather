@@ -9,7 +9,7 @@ export default function Search() {
   let [humidity, setHumidity] = useState(null);
   let [wind, setWind] = useState("");
   let [icon, setIcon] = useState("");
-  let [rain, setRain] = useState("");
+  let [snow, setSnow] = useState("");
   let [cityName, setCityName] = useState("");
   let [date, setDate] = useState("");
 
@@ -25,7 +25,7 @@ export default function Search() {
 
   function showWeather(response) {
     setDate(response.data.dt * 1000);
-    setRain(response.data.weather[0].main);
+    setSnow(response.data.weather[0].main);
     setTemperature(Math.round(response.data.main.temp * 10) / 10);
     setSky(response.data.weather[0].description);
     setHumidity(response.data.main.humidity);
@@ -36,7 +36,7 @@ export default function Search() {
     );
   }
 
-  if (rain === "Rain") {
+  if (snow === "Snow") {
     return (
       <div>
         <div>
@@ -46,7 +46,7 @@ export default function Search() {
                 Currently, in {cityName}
                 <Date date={date} />
               </h2>
-              <p className="rain"> it is raining.</p>
+              <p className="snow"> it is snowing.</p>
               <div className="container">
                 <div className="row">
                   <div className="col-6">
@@ -79,7 +79,7 @@ export default function Search() {
         </div>
       </div>
     );
-  } else if (rain) {
+  } else if (snow) {
     return (
       <div>
         <div>
@@ -89,7 +89,7 @@ export default function Search() {
                 Currently, in {cityName}
                 <Date date={date} />
               </h2>
-              <p className="rain">it is not raining.</p>
+              <p className="snow">it is not snowing.</p>
               <div className="container">
                 <div className="row">
                   <div className="col-6">

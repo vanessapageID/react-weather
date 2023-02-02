@@ -20,6 +20,7 @@ export default function DateWeather(props) {
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
+
   return (
     <div>
       on {day} at {hours}:{minutes}
