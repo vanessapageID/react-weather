@@ -32,7 +32,7 @@ export default function Search() {
     setWind(response.data.wind.speed);
     setCityName(response.data.name);
     setIcon(
-      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+      `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
     );
   }
 
