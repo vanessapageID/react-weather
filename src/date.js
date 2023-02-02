@@ -1,7 +1,7 @@
 import React from "react";
 
-export default function Date(props) {
-  //let date = [props.date];
+export default function DateWeather(props) {
+  const DateInstance = new Date(props.date);
   let days = [
     "Sunday",
     "Monday",
@@ -13,16 +13,16 @@ export default function Date(props) {
     "Sunday",
   ];
 
-  let day = days[props.date.getDay()];
-  let hours = props.date.getHours();
+  let day = days[DateInstance.getDay()];
+  let hours = DateInstance.getHours();
 
-  let minutes = props.date.getMinutes();
+  let minutes = DateInstance.getMinutes();
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
   return (
     <div>
-      {day} {hours}:{minutes}
+      on {day} at {hours}:{minutes}
     </div>
   );
 }

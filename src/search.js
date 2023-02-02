@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-//import Weather from "./weather.js";
 import axios from "axios";
 import Date from "./date";
 
@@ -16,7 +15,6 @@ export default function Search() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    //alert(`Searching for ${city}`);
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=2d45cd9aba9578de617649933c326fdc&units=metric`;
     axios.get(url).then(showWeather);
   }
@@ -72,7 +70,7 @@ export default function Search() {
               <input className="button" type="submit" value="Search" />
             </form>
           </div>
-        </div>{" "}
+        </div>
       </div>
     );
   } else if (rain) {
@@ -109,7 +107,7 @@ export default function Search() {
               <input className="button" type="submit" value="Search" />
             </form>
           </div>
-        </div>{" "}
+        </div>
       </div>
     );
   } else {
