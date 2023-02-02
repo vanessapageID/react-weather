@@ -61,16 +61,17 @@ input {
   border-radius: 5px;
 }
 
-.nextButton {
+.Forecast-5 {
   width: 100%;
   background: white;
   opacity: 0.5;
   border-style: solid;
   border-color: transparent;
   color: black;
+  font-size: 10px;
 }
 
-.searchButton {
+.button {
   margin-left: 10px;
   background: white;
   opacity: 0.8;
@@ -78,12 +79,7 @@ input {
   border-color: transparent;
 }
 
-.pressHere {
-  font-size: 10px;
-  padding-bottom: 3px;
-}
-
-.searchButton:hover {
+.button:hover {
   margin-left: 10px;
   background: white;
   opacity: 0.6;

@@ -41,24 +41,30 @@ export default function Search() {
       <div>
         <div>
           <div className="Forecast">
-            <h2>Currently, in {cityName}</h2>
-            <h3>
-              <Date date={date} />
-            </h3>
-            <p className="rain"> it is raining.</p>
-            <div className="container">
-              <div className="row">
-                <div className="col-6">The temperature is {temperature}°C</div>
-                <div className="col-6">The sky is {sky}</div>
+            <div className="CurrentWeather">
+              <h2>
+                Currently, in {cityName}
+                <Date date={date} />
+              </h2>
+              <p className="rain"> it is raining.</p>
+              <div className="container">
+                <div className="row">
+                  <div className="col-6">
+                    The temperature is {temperature}°C
+                  </div>
+                  <div className="col-6">The sky is {sky}</div>
+                </div>
+                <div className="row">
+                  <div className="col-6">There is {humidity}% humidity</div>
+                  <div className="col-6">The wind speed is {wind} km/h</div>
+                </div>
               </div>
-              <div className="row">
-                <div className="col-6">There is {humidity}% humidity</div>
-                <div className="col-6">The wind speed is {wind} km/h</div>
-              </div>
+              <p>
+                <img src={icon} alt="weather icon" />
+              </p>
             </div>
-            <p>
-              <img src={icon} alt="weather icon" />
-            </p>
+            <div className="Forecast-5"></div>
+            Placeholder for the five-day forecast
           </div>
           <div className="Search">
             <form onSubmit={handleSubmit}>
@@ -78,24 +84,31 @@ export default function Search() {
       <div>
         <div>
           <div className="Forecast">
-            <h2>Currently, in {cityName}</h2>
-            <h3>
-              <Date date={date} />
-            </h3>
-            <p className="rain">it is not raining.</p>
-            <div className="container">
-              <div className="row">
-                <div className="col-6">The temperature is {temperature}°C</div>
-                <div className="col-6">The sky is {sky}</div>
+            <div className="CurrentWeather">
+              <h2>
+                Currently, in {cityName}
+                <Date date={date} />
+              </h2>
+              <p className="rain">it is not raining.</p>
+              <div className="container">
+                <div className="row">
+                  <div className="col-6">
+                    The temperature is {temperature}°C
+                  </div>
+                  <div className="col-6">The sky is {sky}</div>
+                </div>
+                <div className="row">
+                  <div className="col-6">There is {humidity}% humidity</div>
+                  <div className="col-6">The wind speed is {wind} km/h</div>
+                </div>
               </div>
-              <div className="row">
-                <div className="col-6">There is {humidity}% humidity</div>
-                <div className="col-6">The wind speed is {wind} km/h</div>
-              </div>
+              <p>
+                <img src={icon} alt="weather icon" />
+              </p>
             </div>
-            <p>
-              <img src={icon} alt="weather icon" />
-            </p>
+            <div className="Forecast-5">
+              Placeholder for the five-day forecast
+            </div>
           </div>
           <div className="Search">
             <form onSubmit={handleSubmit}>
