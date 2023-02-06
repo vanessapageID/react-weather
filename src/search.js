@@ -26,7 +26,7 @@ export default function Search() {
   function showWeather(response) {
     setDate(response.data.dt * 1000);
     setSnow(response.data.weather[0].main);
-    setTemperature(Math.round(response.data.main.temp * 10) / 10);
+    setTemperature(Math.round(response.data.main.temp));
     setSky(response.data.weather[0].description);
     setHumidity(response.data.main.humidity);
     setWind(response.data.wind.speed);
