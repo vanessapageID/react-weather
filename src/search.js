@@ -106,9 +106,6 @@ export default function Search() {
                 <img src={icon} alt="weather icon" />
               </p>
             </div>
-            <div className="Forecast-5">
-              Placeholder for the five-day forecast
-            </div>
           </div>
           <div className="Search">
             <form onSubmit={handleSubmit}>

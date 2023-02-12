@@ -9,6 +9,10 @@
   margin: 0 auto;
 }
 
+img {
+  padding-bottom: 15px;
+}
+
 body {
   background: #6c7fa4;
   background: -moz-linear-gradient(left, #6c7fa4 0%, #9bb9e3 100%);
